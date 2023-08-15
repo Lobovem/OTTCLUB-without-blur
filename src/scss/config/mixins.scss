@@ -1,0 +1,76 @@
+// !gradient for text
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// !styled placeholder for TextArea
+@mixin style-placeholder($color, $fontSize: inherit, $lineHeight: normal) {
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+}
+
+// !плавное убирание placeholder
+@mixin hide-placeholder($time: 300, $effect: ease) {
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:-moz-placeholder {
+    opacity: 1;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity #{$time}+ms $effect;
+  }
+
+  &:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity #{$time}+ms $effect;
+  }
+}
