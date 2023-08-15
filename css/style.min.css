@@ -83,7 +83,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1;
 }
@@ -261,12 +261,12 @@ sup {
 }
 .header__bannerInner {
   display: grid;
-  grid-template-areas: "title" "photo" "desc" "btn";
+  grid-template-areas: 'title' 'photo' 'desc' 'btn';
 }
 @media (min-width: 768px) {
   .header__bannerInner {
     grid-template-columns: repeat(2, 62% 38%);
-    grid-template-areas: "title photo" "desc photo" "btn photo";
+    grid-template-areas: 'title photo' 'desc photo' 'btn photo';
   }
 }
 @media (min-width: 990px) {
@@ -404,7 +404,7 @@ sup {
   }
 }
 .header__btn {
-  background-color: #FC3232;
+  background-color: #fc3232;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -491,7 +491,7 @@ sup {
   transition: 0.4s;
 }
 .actions__icon:hover {
-  fill: #FC3232;
+  fill: #fc3232;
 }
 .actions__telegram {
   display: none;
@@ -502,7 +502,7 @@ sup {
     transition: 0.4s;
   }
   .actions__telegram:hover {
-    fill: #FC3232;
+    fill: #fc3232;
   }
 }
 .actions__registration {
@@ -512,7 +512,7 @@ sup {
   transition: 0.4s;
 }
 .actions__registration:hover {
-  color: #FC3232;
+  color: #fc3232;
 }
 @media (min-width: 768px) {
   .actions__registration {
@@ -539,8 +539,8 @@ sup {
   transition: 0.4s;
 }
 .actions__enter:hover {
-  color: #FC3232;
-  border: 2px solid #FC3232;
+  color: #fc3232;
+  border: 2px solid #fc3232;
 }
 @media (min-width: 768px) {
   .actions__enter {
@@ -681,7 +681,7 @@ sup {
 
 .benefits__container {
   position: relative;
-  border: 2px solid #FF1F1F;
+  border: 2px solid #ff1f1f;
   border-radius: 20px;
   padding: 60px 16px 32px 16px;
   margin-top: 40px;
@@ -722,7 +722,7 @@ sup {
   padding: 36px;
   top: -41px;
   max-width: 80px;
-  border: 2px solid #FF1F1F;
+  border: 2px solid #ff1f1f;
   clip-path: circle(72% at 50% 0);
   background-color: #131212;
   left: 50%;
@@ -807,7 +807,7 @@ sup {
 .benefits__title span {
   font-size: 67px;
   line-height: 67px;
-  color: #FF1F1F;
+  color: #ff1f1f;
   font-weight: 600;
 }
 @media (min-width: 1920px) {
@@ -828,7 +828,7 @@ sup {
   max-width: 200px;
   font-size: 15px;
   line-height: 21px;
-  Opacity: 0.8;
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
   .benefits__desc {
@@ -849,7 +849,7 @@ sup {
   margin-bottom: 20px;
   padding-left: 40px;
   font-weight: 500;
-  background-image: url(../../images/icon-tick.svg);
+  background-image: url(../images/icon-tick.svg);
   background-position: 0px -2px;
   background-size: 24px;
   background-repeat: no-repeat;
@@ -932,7 +932,7 @@ sup {
   padding: 16px;
   border-radius: 5px;
   font-size: 15px;
-  background-color: #FF1F1F;
+  background-color: #ff1f1f;
   color: #ffffff;
   font-weight: 600;
   font-size: 15px;
@@ -1182,11 +1182,11 @@ sup {
   cursor: pointer;
 }
 .channels__btn:hover {
-  border: 2px solid #FC3232;
-  color: #FC3232;
+  border: 2px solid #fc3232;
+  color: #fc3232;
 }
 .channels__btn_active {
-  background-color: #FC3232;
+  background-color: #fc3232;
   border: none;
   font-size: 16px;
   transition: 0.4s;
@@ -1357,12 +1357,12 @@ sup {
 }
 .screens__bannerInner {
   display: grid;
-  grid-template-areas: "title" "desc" "photo" "btn";
+  grid-template-areas: 'title' 'desc' 'photo' 'btn';
 }
 @media (min-width: 768px) {
   .screens__bannerInner {
     grid-template-columns: repeat(2, 65% 35%);
-    grid-template-areas: "title photo" "desc photo" "btn photo";
+    grid-template-areas: 'title photo' 'desc photo' 'btn photo';
   }
 }
 @media (min-width: 990px) {
@@ -1505,7 +1505,7 @@ sup {
   }
 }
 .screens__btn {
-  background-color: #FC3232;
+  background-color: #fc3232;
   color: #ffffff;
   font-size: 15px;
   margin: 0 auto;
@@ -1737,7 +1737,7 @@ sup {
   transition: 0.4s;
 }
 .questions__accordTitle:hover {
-  color: #FC3232;
+  color: #fc3232;
 }
 .questions__accordTitle::before {
   position: absolute;
@@ -1745,7 +1745,7 @@ sup {
   right: 0;
   background-image: url(../images/icon-down.svg);
   background-repeat: no-repeat;
-  content: "";
+  content: '';
   top: 20px;
   right: 0;
   width: 24px;
@@ -1891,7 +1891,7 @@ sup {
   transition: 0.4s;
 }
 .footer__menuItem:hover {
-  color: #FC3232;
+  color: #fc3232;
 }
 @media (min-width: 375px) {
   .footer__menuItem {
@@ -1963,7 +1963,7 @@ sup {
   transition: 0.4s;
 }
 .footer__tel:hover {
-  color: #FC3232;
+  color: #fc3232;
 }
 @media (min-width: 1920px) {
   .footer__tel {
@@ -1981,7 +1981,7 @@ sup {
   transition: 0.4s;
 }
 .footer__email:hover {
-  color: #FC3232;
+  color: #fc3232;
 }
 @media (min-width: 1920px) {
   .footer__email {
