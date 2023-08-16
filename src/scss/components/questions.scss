@@ -1,9 +1,15 @@
 .questions__left>.questions__innerAcord:first-child .questions__accordTitle {
   border: none;
+
 }
 
 .questions__right>.questions__innerAcord:first-child .questions__accordTitle {
-  border: none; //TODO check out selectors
+  border-bottom: 1px solid $colorWhiteSuperLight;
+
+  @include md-min {
+    border: none;
+
+  }
 }
 
 .questions {
@@ -122,8 +128,7 @@
 
     &::before {
       position: absolute;
-      top: 0;
-      right: 0;
+
       background-image: url(../images/icon-down.svg);
       background-repeat: no-repeat;
 
@@ -132,6 +137,7 @@
       right: 0;
       width: 24px;
       height: 24px;
+      transition: 0.4s;
     }
 
     &.active:before {

@@ -9,6 +9,8 @@
 import { isWebp } from './modules';
 //import according module
 import { according } from './modules/accordion';
+import { channelsIcon } from './modules/channelsIcon';
+import { channelsBtn } from './modules/channelsBtn';
 
 // import AOS from 'aos'
 
@@ -20,6 +22,8 @@ import { according } from './modules/accordion';
 isWebp();
 //according function
 according();
+channelsIcon();
+channelsBtn();
 
 /* Добавление класса touch для HTML если браузер мобильный */
 // addTouchClass();
