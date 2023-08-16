@@ -208,7 +208,7 @@
     }
 
     @include ul-min {
-      gap: 30px;
+      gap: 28px;
       margin-bottom: 52px;
     }
   }
@@ -226,16 +226,26 @@
     color: $colorWhite;
     transition: 0.4s;
     cursor: pointer;
+    font-size: 15px;
 
     &:hover {
       border: 2px solid $colorAccent;
       color: $colorAccent;
     }
 
-    &_active {
+    &.active {
       background-color: $colorAccent;
       border: 2px solid $colorAccent;
       transition: 0.4s;
+      font-size: 15px;
+
+      @include md-min {
+        font-size: 16px;
+      }
+
+      @include ul-min {
+        font-size: 20px;
+      }
 
       &:hover {
         border: 2px solid $colorAccent;
@@ -248,6 +258,7 @@
       width: 154px;
       min-height: 48px;
       padding: 12px 18px;
+      font-size: 16px;
     }
 
     @include ul-min {
@@ -262,11 +273,14 @@
 
   &__wrap {
     position: relative;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     margin-bottom: 18px;
 
+    // &#popular {
+    //   display: grid;
+    // }
 
 
     @include xx-min {
@@ -293,10 +307,10 @@
 
   }
 
+
   &__item {
     width: 100%;
   }
-
 
   &__item-film {
     display: none;
@@ -334,9 +348,12 @@
     @include lg-min {
       display: block;
     }
+
+
   }
 
-  &__showAll {
+
+  &__icon {
     position: relative;
     display: block;
     cursor: pointer;
@@ -371,11 +388,5 @@
 
   }
 
-  &__icon {
-    position: absolute;
-    top: -2px;
-    right: 0;
 
-
-  }
 }

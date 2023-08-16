@@ -1177,7 +1177,7 @@ sup {
 }
 @media (min-width: 1920px) {
   .channels__innerBtn {
-    gap: 30px;
+    gap: 28px;
     margin-bottom: 52px;
   }
 }
@@ -1194,17 +1194,29 @@ sup {
   color: #ffffff;
   transition: 0.4s;
   cursor: pointer;
+  font-size: 15px;
 }
 .channels__btn:hover {
   border: 2px solid #FC3232;
   color: #FC3232;
 }
-.channels__btn_active {
+.channels__btn.active {
   background-color: #FC3232;
   border: 2px solid #FC3232;
   transition: 0.4s;
+  font-size: 15px;
 }
-.channels__btn_active:hover {
+@media (min-width: 768px) {
+  .channels__btn.active {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__btn.active {
+    font-size: 20px;
+  }
+}
+.channels__btn.active:hover {
   border: 2px solid #FC3232;
   color: #ffffff;
 }
@@ -1213,6 +1225,7 @@ sup {
     width: 154px;
     min-height: 48px;
     padding: 12px 18px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1920px) {
@@ -1226,7 +1239,7 @@ sup {
 }
 .channels__wrap {
   position: relative;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-bottom: 18px;
@@ -1298,7 +1311,7 @@ sup {
     display: block;
   }
 }
-.channels__showAll {
+.channels__icon {
   position: relative;
   display: block;
   cursor: pointer;
@@ -1311,10 +1324,10 @@ sup {
   text-transform: uppercase;
   transition: 0.4s;
 }
-.channels__showAll:hover {
+.channels__icon:hover {
   color: #FC3232;
 }
-.channels__showAll::before {
+.channels__icon::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -1325,13 +1338,8 @@ sup {
   background-repeat: no-repeat;
   transition: 0.4s;
 }
-.channels__showAll.active:before {
+.channels__icon.active:before {
   transform: scaleY(-1);
-}
-.channels__icon {
-  position: absolute;
-  top: -2px;
-  right: 0;
 }
 
 .screens__container {
